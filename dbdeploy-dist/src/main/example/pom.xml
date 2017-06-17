@@ -12,7 +12,7 @@
             <plugin>
                 <groupId>com.dbdeploy</groupId>
                 <artifactId>maven-dbdeploy-plugin</artifactId>
-                <version>3.0-SNAPSHOT</version>
+                <version>3.1-SNAPSHOT</version>
 
                 <configuration>
                     <scriptdirectory>.</scriptdirectory>
