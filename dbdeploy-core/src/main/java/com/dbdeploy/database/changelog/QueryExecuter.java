@@ -19,7 +19,7 @@ public class QueryExecuter {
 	public void execute(String sql) throws SQLException {
 		Statement statement = connection.createStatement();
 		try {
-			statement.execute(sql);
+			statement.executeUpdate(sql);
 		} finally {
 			statement.close();
 		}
@@ -32,7 +32,7 @@ public class QueryExecuter {
                 Object param = params[i];
                 statement.setObject(i+1, param);
             }
-            statement.execute();
+            statement.executeUpdate();
         } finally {
             statement.close();
         }
